@@ -6,7 +6,7 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import VueAnalytics from 'vue-analytics'
+import VueGtag from 'vue-gtag'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -25,7 +25,7 @@ Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 Vue.use(VueSweetalert2)
 Vue.use(Photoswipe)
-Vue.use(VueAnalytics, {
+Vue.use(VueGtag, {
   id: process.env.VUE_APP_GA
 })
 
