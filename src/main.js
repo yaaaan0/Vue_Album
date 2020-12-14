@@ -26,7 +26,9 @@ Vue.use(VueAxios, axios)
 Vue.use(VueSweetalert2)
 Vue.use(Photoswipe)
 Vue.use(VueGtag, {
-  id: process.env.VUE_APP_GA
+  config: {
+    id: process.env.VUE_APP_GA
+  }
 })
 
 new Vue({
